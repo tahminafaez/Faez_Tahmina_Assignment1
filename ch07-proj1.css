@@ -63,34 +63,38 @@ button {
 
 
 
-/* add your styles here */
-
+/* Use Flexbox to position the title and menu icon on opposite sides of the header and vertically align them */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Use CSS Grid Layout for the card gallery */
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
 
+/* Add shadow effect when hovering over a card */
 .card:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Make sure images scale to fit within their cards */
 .thumbnail img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
+/* Increase image saturation on hover */
 .card:hover .thumbnail img {
     filter: saturate(150%);
 }
 
+/* Use Flexbox to center the card gallery container */
 .container {
     display: flex;
     justify-content: center;
@@ -100,10 +104,13 @@ header {
 /* styles for tablet portrait and mobile landscape screens */
 
 @media (max-width: 768px) {
+
+	/* Display two cards per row using CSS Grid */
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
 
+	/* Updata header height and increase card font size
     :root {
         --card-font-size: 100%;
         --header-height: 5em;
@@ -113,10 +120,13 @@ header {
 /* styles for mobile protrait screen */
 
 @media (max-width: 480px) {
+	
+	/* Display one card per row using CSS Grid */
     .cards {
         grid-template-columns: 1fr;
     }
-
+	
+	/* Adjust header height and font size
     :root {
         --card-font-size: 100%;
         --header-font-size: 24px;
