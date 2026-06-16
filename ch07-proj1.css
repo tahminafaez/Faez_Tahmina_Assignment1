@@ -110,7 +110,7 @@ header {
         grid-template-columns: repeat(2, 1fr);
     }
 
-	/* Updata header height and increase card font size
+	/* Update header height and increase card font size */
     :root {
         --card-font-size: 100%;
         --header-height: 5em;
