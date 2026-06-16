@@ -39,6 +39,7 @@ button {
     border-radius: 0.25rem;
     cursor: pointer;
 
+	/* Hide button until card is hovered */
     opacity: 0;
     transition: opacity 1s;
 }
@@ -60,7 +61,6 @@ button {
 .card:hover button {
     opacity: 1;
 }
-
 
 
 /* Use Flexbox to position the title and menu icon on opposite sides of the header and vertically align them */
@@ -126,7 +126,7 @@ header {
         grid-template-columns: 1fr;
     }
 	
-	/* Adjust header height and font size
+	/* Adjust header height and font size */
     :root {
         --card-font-size: 100%;
         --header-font-size: 24px;
